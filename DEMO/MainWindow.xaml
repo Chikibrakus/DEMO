@@ -1,0 +1,19 @@
+﻿<Window x:Class="DEMO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DEMO"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="360" Width="280">
+    <Grid>
+        <Label Content="Авторизация" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="46,122,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="46,192,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TxtLogin" HorizontalAlignment="Center" Margin="0,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+        <PasswordBox x:Name="TxtPass" HorizontalAlignment="Center" Margin="0,226,0,0" Width="190" Height="17" VerticalAlignment="Top"/>
+        <Button x:Name="BtnEnter" Content="Вход" HorizontalAlignment="Center" Margin="0,248,0,0" VerticalAlignment="Top" Height="34" Width="188" Click="BtnEnter_Click"/>
+        <Button x:Name="BtnReg" Content="Регистарция" HorizontalAlignment="Center" Margin="0,287,0,0" Width="188" Click="BtnReg_Click" Height="34" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

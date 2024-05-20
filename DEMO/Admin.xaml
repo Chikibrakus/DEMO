@@ -1,0 +1,21 @@
+﻿<Window x:Class="DEMO.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DEMO"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="TableOrders"  Margin="0,0,265,0" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Дата}" Width="*"/>
+                <DataGridTextColumn Header="Оборудование" Binding="{Binding Оборудование}" Width="*"/>
+                <DataGridTextColumn Header="Пользователь" Binding="{Binding Пользователь.Логин}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="BtnCreate" Content="Создать" HorizontalAlignment="Left" Margin="540,388,0,0" VerticalAlignment="Top" Height="36" Width="250" Click="BtnCreate_Click"/>
+        <TextBox x:Name="TxtDate" HorizontalAlignment="Left" Margin="545,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="245" Height="35"/>
+        <TextBox x:Name="TxtObor" HorizontalAlignment="Left" Margin="545,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="245" Height="35"/>
+    </Grid>
+</Window>
